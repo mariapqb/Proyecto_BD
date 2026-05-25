@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2E5B7E7E-AACB-C156-4BA1-FBA45F274E46" containerWithKeyObject="03AD3618-AF00-DE4E-36C5-CBD7BEE31404" localFKIndex="96C64ED7-2BD6-2037-C4B8-E76649469A02" name="FK_EPI_TEMP">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>FK_EPI_TEMP</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<referredTableLongName>QUINDIOFLIX.TEMPORADAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>74B416E8-38F9-B500-72DF-095AAEF8C6A9</referredTableID>
+<keyObject>C6F9EB0E-9C94-1EC2-33A8-0FC464B54C9E</keyObject>
+<referredKeyID>C6F9EB0E-9C94-1EC2-33A8-0FC464B54C9E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TEMPORADA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CATEGORIAS" directorySegmentName="seg_0" id="AEA62A73-B6D5-1B54-BDF6-B49BEBF6A4B6">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>398E3086-759E-91AE-9B59-81D4EB8D4DA5</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_CATEGORIA" id="00033907-FBBB-C280-5AB1-B1C394FAF0D9">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="406FDCFA-A4AD-5F8B-D433-531DB55A42B4">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="A1D3551F-7E29-BA44-BD92-000DB8E1C6A7">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CATEGORIAS_PK" id="6BE5DC36-1B00-8B72-E60F-59B74D4261EE">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CATEGORIAS_NOMBRE_UN" id="695DE73C-2C09-AC12-32FD-4A746AB2A18F">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

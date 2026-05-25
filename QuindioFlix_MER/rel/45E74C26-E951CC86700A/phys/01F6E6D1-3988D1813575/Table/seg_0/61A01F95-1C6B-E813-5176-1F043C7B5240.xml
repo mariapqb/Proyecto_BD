@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PAGOS" directorySegmentName="seg_0" id="61A01F95-1C6B-E813-5176-1F043C7B5240">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>BA7E1FDC-F4AE-3FC6-4012-4145ABA8369A</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_PAGO" id="03E2AE35-CA32-EB15-BB79-62C91FCBE045">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="ID_USUARIO" id="09A00F16-708D-4A51-F922-1CDFAEC5A13C">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_METODO_PAGO" id="230FB724-6686-E4D2-476B-573CEECAC03D">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:53:20 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_PAGO" id="26CB46CE-D482-A1F3-09FE-4D5D9F36AD08">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="MONTO" id="33AFEEF8-ADEC-E5A2-E3D8-57EBFE5CDADB">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO_PAGO" id="BBD6D848-62F4-541A-64DF-3AC294122C87">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="METODO_PAGO" id="DD82EF14-F5EA-94DA-64D7-25C22868A658">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_PAGOS" id="BD2E7D4F-A0E6-E513-8B1F-08DAFB73CAB9">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:53:20 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PAGO_USUARIO" id="76A4E8D9-6191-38EB-C160-D7522F7E97D4">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PAGO_METODO" id="EBA148FD-A5EE-79E0-4ACE-B74AB77F5507">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:53:20 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_PAGOS" id="5FEE84BC-EB2A-10B3-1916-E0371306FE6F">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<existingIndex>BD2E7D4F-A0E6-E513-8B1F-08DAFB73CAB9</existingIndex>
+<indexSegment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

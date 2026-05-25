@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0DFB350-2065-0638-F5B7-90A7E9F680F8" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CIUDADES">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>CIUDADES</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ciudades de cada departamento geográfico]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CIUDAD" id="1A7DCCD6-11AB-4B36-8B60-8519FEB678E5">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CIUDADES</sourceObjSchema>
+<sourceObjName>ID_CIUDAD</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de la ciudad]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NOMBRE" id="EE74E320-C915-1F8C-534C-3C62CF99F9A5">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CIUDADES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre de la ciudad]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_DEPARTAMENTO_GEO" id="2CD2EA3C-BF2D-3FAB-AAA5-5ADBF2C68C43">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CIUDADES</sourceObjSchema>
+<sourceObjName>ID_DEPARTAMENTO_GEO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departamento geográfico asociado]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AC8C7E4-A77D-6A95-77F3-F9E1166F42A1" referredColumn="75AD04C7-3489-2D2C-8460-F8EEC6C071C2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94AA46E8-4AA6-B3ED-3CE4-28D4C9C223CD" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CIUDADES_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010875</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A7DCCD6-11AB-4B36-8B60-8519FEB678E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="045FE714-0583-0E97-9B30-5993E7C19842" name="UQ_CIUDAD">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_CIUDAD</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE74E320-C915-1F8C-534C-3C62CF99F9A5"/>
+<colUsage columnID="2CD2EA3C-BF2D-3FAB-AAA5-5ADBF2C68C43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FD0DB23-2B24-E725-F793-800C73BE3AFA" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="UQ_CIUDAD">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_CIUDAD</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE74E320-C915-1F8C-534C-3C62CF99F9A5"/>
+<colUsage columnID="2CD2EA3C-BF2D-3FAB-AAA5-5ADBF2C68C43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57C655E3-F564-A558-771D-1ACEE79E3D9A" name="FK_CIUDAD_DEPGEO">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CD2EA3C-BF2D-3FAB-AAA5-5ADBF2C68C43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

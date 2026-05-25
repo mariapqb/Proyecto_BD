@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PAISES" directorySegmentName="seg_0" id="FE862796-0F2E-D3EE-A700-D4BBCB59DAE1">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>398E3086-759E-91AE-9B59-81D4EB8D4DA5</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="4F1E2851-0419-BEBC-3906-945BB69B3FDE">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PAIS" id="E9FF7B15-CB8E-1855-3E00-154E1BF78E06">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PAISES_PK" id="1E7119DA-510A-0047-4A92-49E3646D1629">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="PAISES_NOMBRE_UN" id="54084AD4-7EF3-319C-1F6F-98D3718C3B2C">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74B416E8-38F9-B500-72DF-095AAEF8C6A9" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="TEMPORADAS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>TEMPORADAS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temporadas de series o podcasts]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TEMPORADA" id="8F9D3ABE-33BC-B2B5-2E40-C584267FB1AB">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>TEMPORADAS</sourceObjSchema>
+<sourceObjName>ID_TEMPORADA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador de temporada]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_CONTENIDO" id="F42508B5-4205-6D80-CA59-7A522B98124F">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>TEMPORADAS</sourceObjSchema>
+<sourceObjName>ID_CONTENIDO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contenido asociado]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0011A58C-44CB-6207-DC8F-AF571A4E370D" referredColumn="41E72AE4-6AC3-E693-9BC9-93FFD64C3C02"/>
+</associations>
+</Column>
+<Column name="NUMERO_TEMPORADA" id="16530411-BD72-2777-E907-6AA4B7AF4CF2">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>TEMPORADAS</sourceObjSchema>
+<sourceObjName>NUMERO_TEMPORADA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de temporada]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITULO" id="008C1AE6-3048-B095-C3B7-06F4ECD61DC8">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>TEMPORADAS</sourceObjSchema>
+<sourceObjName>TITULO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Título de la temporada]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6F9EB0E-9C94-1EC2-33A8-0FC464B54C9E" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="TEMPORADAS_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010955</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F9D3ABE-33BC-B2B5-2E40-C584267FB1AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5C940E7-0CA5-3B05-10D9-BC808C148FA8" name="UQ_TEMPORADA">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_TEMPORADA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F42508B5-4205-6D80-CA59-7A522B98124F"/>
+<colUsage columnID="16530411-BD72-2777-E907-6AA4B7AF4CF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E97E8506-26DF-43D5-4D6C-1F63D6104903" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="UQ_TEMPORADA">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_TEMPORADA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F42508B5-4205-6D80-CA59-7A522B98124F"/>
+<colUsage columnID="16530411-BD72-2777-E907-6AA4B7AF4CF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="634015F7-FF68-3E53-15E4-C959EDE60CF6" name="FK_TEMP_CONTENIDO">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F42508B5-4205-6D80-CA59-7A522B98124F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

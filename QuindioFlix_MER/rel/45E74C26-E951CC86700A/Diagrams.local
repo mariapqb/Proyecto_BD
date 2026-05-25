@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="D24D3FE1-56F2-3BAE-A30E-63BF6B4CC680" name="QuindioFlix_MER" visible="true"/>
+   <object objectType="sub_view" objectID="43914FAB-A4E0-1D28-9BC6-A5CFB662EA80" name="QuindioFlix_MER - SubView_1" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

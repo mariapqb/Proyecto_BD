@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CALIFICACIONES" directorySegmentName="seg_0" id="7B12718D-9986-EBC0-71B0-FCF6E2C5566C">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>398E3086-759E-91AE-9B59-81D4EB8D4DA5</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ESTRELLAS" id="0092CDD0-50DC-D094-1159-3505DECE8D0C">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PERFIL" id="22394DF7-3BD9-9442-E8A0-C0C17732756F">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CALIFICACION" id="3B023733-9F20-356D-C0D8-E5F3BE37ABC3">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="ID_CONTENIDO" id="7855A79C-4979-F07C-AF2F-6996AEB1E241">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RESENA" id="C81672E0-EB27-592C-1E3B-4D919B935233">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CALIFICACION" id="D0797CE6-8D78-815A-2A14-28EAAC77B53C">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UQ_CALIFICACION" id="217D746A-5F07-F29D-5293-2A857E8E16CD">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CAL_CONTENIDO" id="2187D28C-7131-0019-FD6D-F6EEF5320353">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CAL_PERFIL" id="6FD633C6-8114-A68E-0705-0CC695C3A377">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CALIFICACIONES_PK" id="F4BD783D-659B-2314-A7E1-2F1883C5C3E5">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_CALIFICACION" id="44AB2D6A-0471-784B-1BA2-968E75B1944C">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<existingIndex>217D746A-5F07-F29D-5293-2A857E8E16CD</existingIndex>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

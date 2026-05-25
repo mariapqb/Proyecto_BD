@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="655F230A-EA45-08FB-3B42-E6A83861942C" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PLANES">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PLANES</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Planes de suscripción disponibles]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PLAN" id="691FA72C-3106-A18F-D1D0-E79841E3AB4C">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PLANES</sourceObjSchema>
+<sourceObjName>ID_PLAN</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del plan]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NOMBRE" id="E37320E3-BCA3-9C01-5121-B0B0A561247B">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PLANES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del plan (BASICO, ESTANDAR, PREMIUM)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_PLAN_NOMBRE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;BASICO&apos;" description=""/>
+<valueDef value="&apos;ESTANDAR&apos;" description=""/>
+<valueDef value="&apos;PREMIUM&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO_MENSUAL" id="8B83D6F7-2F51-CCFB-73CA-7D1AF0E0B205">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PLANES</sourceObjSchema>
+<sourceObjName>PRECIO_MENSUAL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Costo mensual del plan]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PANTALLAS_SIMULTANEAS" id="7A7E6D1B-62FA-0555-8158-9D88E4B7853E">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PLANES</sourceObjSchema>
+<sourceObjName>PANTALLAS_SIMULTANEAS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de pantallas permitidas]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALIDAD" id="F41CFE15-266D-9FFD-65FF-0FC3A312CB3B">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PLANES</sourceObjSchema>
+<sourceObjName>CALIDAD</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Calidad de reproducción (SD, HD, 4K)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_CALIDAD</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;4K&apos;" description=""/>
+<valueDef value="&apos;HD&apos;" description=""/>
+<valueDef value="&apos;SD&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_PERFILES" id="DB15FFDF-6D72-3FC7-115C-271963B40DE8">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PLANES</sourceObjSchema>
+<sourceObjName>MAX_PERFILES</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Máximo de perfiles permitidos]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AC806F3-D984-C75C-8A9A-FB4B47BAA5A2" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PLANES_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010899</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="691FA72C-3106-A18F-D1D0-E79841E3AB4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="618277A3-EBA8-D475-A720-9CA75C64439F" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PLANES_NOMBRE_UN">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010900</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E37320E3-BCA3-9C01-5121-B0B0A561247B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

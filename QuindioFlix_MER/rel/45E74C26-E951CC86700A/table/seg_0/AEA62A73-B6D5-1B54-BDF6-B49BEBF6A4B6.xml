@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AEA62A73-B6D5-1B54-BDF6-B49BEBF6A4B6" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CATEGORIAS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>CATEGORIAS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Clasificación general del contenido (película, serie, podcast, documental, música)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CATEGORIA" id="00033907-FBBB-C280-5AB1-B1C394FAF0D9">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CATEGORIAS</sourceObjSchema>
+<sourceObjName>ID_CATEGORIA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la categoría]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NOMBRE" id="A1D3551F-7E29-BA44-BD92-000DB8E1C6A7">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CATEGORIAS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre de la categoría de contenido]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_CATEGORIA_NOMBRE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;DOCUMENTAL&apos;" description=""/>
+<valueDef value="&apos;MUSICA&apos;" description=""/>
+<valueDef value="&apos;PELICULA&apos;" description=""/>
+<valueDef value="&apos;PODCAST&apos;" description=""/>
+<valueDef value="&apos;SERIE&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="406FDCFA-A4AD-5F8B-D433-531DB55A42B4">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CATEGORIAS</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripción opcional de la categoría]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BE5DC36-1B00-8B72-E60F-59B74D4261EE" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CATEGORIAS_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010903</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00033907-FBBB-C280-5AB1-B1C394FAF0D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="695DE73C-2C09-AC12-32FD-4A746AB2A18F" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CATEGORIAS_NOMBRE_UN">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010904</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1D3551F-7E29-BA44-BD92-000DB8E1C6A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

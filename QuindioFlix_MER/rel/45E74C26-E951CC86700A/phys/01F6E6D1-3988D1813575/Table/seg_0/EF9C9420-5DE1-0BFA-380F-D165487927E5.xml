@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DEPARTAMENTOS_GEO" directorySegmentName="seg_0" id="EF9C9420-5DE1-0BFA-380F-D165487927E5">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>398E3086-759E-91AE-9B59-81D4EB8D4DA5</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_DEPARTAMENTO_GEO" id="75AD04C7-3489-2D2C-8460-F8EEC6C071C2">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="ID_PAIS" id="CC995080-84F1-3E56-7840-8D0FD9AD3E98">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="FF8F0FCD-112C-1E36-1C32-E1B55F00C70E">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UQ_DEPGEO" id="1969BDF9-21F3-F8BB-AE02-C83CC39CA050">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DEPGEO_PAIS" id="86CE26A2-0B58-6787-FEFA-3441BD59953E">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTAMENTOS_GEO_PK" id="C21CE9DA-EEB0-EB06-F2B8-2B8F8374BC30">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_DEPGEO" id="392922B3-1B06-CE6F-522A-ABFE9A34A535">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<segment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<existingIndex>1969BDF9-21F3-F8BB-AE02-C83CC39CA050</existingIndex>
+<indexSegment>7B272C4A-BFA4-CB54-5393-4E2282FBF6BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

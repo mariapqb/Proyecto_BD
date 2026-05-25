@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61A01F95-1C6B-E813-5176-1F043C7B5240" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PAGOS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PAGOS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PAGO" id="03E2AE35-CA32-EB15-BB79-62C91FCBE045">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PAGOS</sourceObjSchema>
+<sourceObjName>ID_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_USUARIO" id="09A00F16-708D-4A51-F922-1CDFAEC5A13C">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PAGOS</sourceObjSchema>
+<sourceObjName>ID_USUARIO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="944797AB-285D-03A5-F0C0-EF4CA0C18DBE" referredColumn="E89C4DE3-3D5E-6A2E-98A1-B6DBBF8D8652"/>
+</associations>
+</Column>
+<Column name="ID_METODO_PAGO" id="230FB724-6686-E4D2-476B-573CEECAC03D">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PAGOS</sourceObjSchema>
+<sourceObjName>ID_METODO_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:53:20 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>F8A3A050-FFCD-845D-3B58-A95D2D2B9571</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58A69E64-98EB-1505-FD8A-737AA39EFD52" referredColumn="E4E86B78-310A-3348-1A3C-68A3E0C3B107"/>
+</associations>
+</Column>
+<Column name="FECHA_PAGO" id="26CB46CE-D482-A1F3-09FE-4D5D9F36AD08">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PAGOS</sourceObjSchema>
+<sourceObjName>FECHA_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTO" id="33AFEEF8-ADEC-E5A2-E3D8-57EBFE5CDADB">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PAGOS</sourceObjSchema>
+<sourceObjName>MONTO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_MONTO_PAGO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="
+        monto &gt; 0
+    "/>
+<implementationDef dbType="Oracle Database 21c" definition="
+        monto &gt; 0
+    "/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_PAGO" id="BBD6D848-62F4-541A-64DF-3AC294122C87">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PAGOS</sourceObjSchema>
+<sourceObjName>ESTADO_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_ESTADO_PAGO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;EXITOSO&apos;" description=""/>
+<valueDef value="&apos;FALLIDO&apos;" description=""/>
+<valueDef value="&apos;PENDIENTE&apos;" description=""/>
+<valueDef value="&apos;REEMBOLSADO&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="METODO_PAGO" id="DD82EF14-F5EA-94DA-64D7-25C22868A658">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PAGOS</sourceObjSchema>
+<sourceObjName>METODO_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Método de pago]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5FEE84BC-EB2A-10B3-1916-E0371306FE6F" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PK_PAGOS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010995</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03E2AE35-CA32-EB15-BB79-62C91FCBE045"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD2E7D4F-A0E6-E513-8B1F-08DAFB73CAB9" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PK_PAGOS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PK_PAGOS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:53:20 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>C9CE75EC-C6E7-8AA7-17EE-DC81BDC01821</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03E2AE35-CA32-EB15-BB79-62C91FCBE045"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76A4E8D9-6191-38EB-C160-D7522F7E97D4" name="FK_PAGO_USUARIO">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09A00F16-708D-4A51-F922-1CDFAEC5A13C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBA148FD-A5EE-79E0-4ACE-B74AB77F5507" name="FK_PAGO_METODO">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:53:20 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="230FB724-6686-E4D2-476B-573CEECAC03D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

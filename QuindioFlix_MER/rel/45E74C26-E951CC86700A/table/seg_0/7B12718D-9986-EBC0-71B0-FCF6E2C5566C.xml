@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B12718D-9986-EBC0-71B0-FCF6E2C5566C" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CALIFICACIONES">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>CALIFICACIONES</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Calificación de contenido por usuarios]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CALIFICACION" id="3B023733-9F20-356D-C0D8-E5F3BE37ABC3">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CALIFICACIONES</sourceObjSchema>
+<sourceObjName>ID_CALIFICACION</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID de calificación]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_PERFIL" id="22394DF7-3BD9-9442-E8A0-C0C17732756F">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CALIFICACIONES</sourceObjSchema>
+<sourceObjName>ID_PERFIL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Perfil que califica]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3557D8EB-6C01-403D-C77F-2ABE52FB4CDF" referredColumn="C041D94E-D743-F372-4284-DB1B1A8689F1"/>
+</associations>
+</Column>
+<Column name="ID_CONTENIDO" id="7855A79C-4979-F07C-AF2F-6996AEB1E241">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CALIFICACIONES</sourceObjSchema>
+<sourceObjName>ID_CONTENIDO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contenido calificado]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8F90E51-7C27-6AC1-4398-CB522719785D" referredColumn="41E72AE4-6AC3-E693-9BC9-93FFD64C3C02"/>
+</associations>
+</Column>
+<Column name="ESTRELLAS" id="0092CDD0-50DC-D094-1159-3505DECE8D0C">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CALIFICACIONES</sourceObjSchema>
+<sourceObjName>ESTRELLAS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Puntuación (1 a 5)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_ESTRELLAS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="RESENA" id="C81672E0-EB27-592C-1E3B-4D919B935233">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CALIFICACIONES</sourceObjSchema>
+<sourceObjName>RESENA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Comentario opcional]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CALIFICACION" id="D0797CE6-8D78-815A-2A14-28EAAC77B53C">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CALIFICACIONES</sourceObjSchema>
+<sourceObjName>FECHA_CALIFICACION</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha de calificación]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4BD783D-659B-2314-A7E1-2F1883C5C3E5" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CALIFICACIONES_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010985</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B023733-9F20-356D-C0D8-E5F3BE37ABC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44AB2D6A-0471-784B-1BA2-968E75B1944C" name="UQ_CALIFICACION">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_CALIFICACION</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22394DF7-3BD9-9442-E8A0-C0C17732756F"/>
+<colUsage columnID="7855A79C-4979-F07C-AF2F-6996AEB1E241"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="217D746A-5F07-F29D-5293-2A857E8E16CD" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="UQ_CALIFICACION">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_CALIFICACION</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22394DF7-3BD9-9442-E8A0-C0C17732756F"/>
+<colUsage columnID="7855A79C-4979-F07C-AF2F-6996AEB1E241"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2187D28C-7131-0019-FD6D-F6EEF5320353" name="FK_CAL_CONTENIDO">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7855A79C-4979-F07C-AF2F-6996AEB1E241"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FD633C6-8114-A68E-0705-0CC695C3A377" name="FK_CAL_PERFIL">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22394DF7-3BD9-9442-E8A0-C0C17732756F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

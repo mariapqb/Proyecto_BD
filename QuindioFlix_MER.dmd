@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="QuindioFlix_MER" id="4490178E-A008-A920-C8CC-88B2B9242B88" version="3.5">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:14:59 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4490178E-A008-A920-C8CC-88B2B9242B88</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="04AAD1A1-D7F7-E3E9-7962-1CCE12206664">
+<designStoragePath>C:\Users\maria\Proyecto_Bases2</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F01ECA2C-2193-6E09-F47B-A98A863D7013">
+<designStoragePath>C:\Users\maria\Proyecto_Bases2</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F86061C5-8D3E-EAB3-6927-CD2688F6DC78">
+<designStoragePath>C:\Users\maria\Proyecto_Bases2</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="E468A6B7-1A3A-A60D-A064-A338A55296DC">
+<designStoragePath>C:\Users\maria\Proyecto_Bases2</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="0B5F5D78-947D-366F-DDF3-E0C1271BDD8F">
+<designStoragePath>C:\Users\maria\Proyecto_Bases2</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F1E649E9-8EFD-868D-69AA-5B9909377A15">
+<designStoragePath>C:\Users\maria\Proyecto_Bases2</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

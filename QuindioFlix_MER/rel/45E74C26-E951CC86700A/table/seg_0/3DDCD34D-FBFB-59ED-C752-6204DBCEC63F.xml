@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DDCD34D-FBFB-59ED-C752-6204DBCEC63F" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="DEPARTAMENTOS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>DEPARTAMENTOS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departamentos internos de la empresa]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DEPARTAMENTO" id="AC69C53E-D8EA-75B3-2D6D-AB9E77A3968E">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>ID_DEPARTAMENTO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del departamento]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NOMBRE" id="B019026F-751C-EFEC-A889-34D54727E312">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del área (Tecnología, Marketing, etc.)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_JEFE" id="003ABC01-5244-9957-3F82-10FD1FFB700C">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS</sourceObjSchema>
+<sourceObjName>ID_JEFE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Empleado jefe del departamento]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0950A7E-1F24-D40B-C238-3C6F93A8341C" referredColumn="4512622A-6991-5FCE-0CA8-0D46FADDE9C7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF18B11A-3BBD-601A-76C1-DEB067E08DFD" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="DEPARTAMENTOS_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010880</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC69C53E-D8EA-75B3-2D6D-AB9E77A3968E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="112A6684-CDE4-ABA6-9E7E-90379DF26037" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="DEPARTAMENTOS_NOMBRE_UN">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010881</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B019026F-751C-EFEC-A889-34D54727E312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20A929B6-A416-D49A-1691-108B905A0710" name="FK_DEP_JEFE">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="003ABC01-5244-9957-3F82-10FD1FFB700C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

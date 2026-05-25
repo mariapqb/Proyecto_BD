@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="QUINDIOFLIX" directorySegmentName="seg_0" id="C45D1CA2-316F-ED99-35BC-F68158FCFFFD">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>00185A6F-8111-09F2-2614-D8A2E30974F6</importedID>
+</SchemaObject>

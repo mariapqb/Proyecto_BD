@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B10C80C9-FE84-8CAF-6FB8-6F332A5B4E75" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CONTENIDO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>CONTENIDO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Catálogo multimedia]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONTENIDO" id="41E72AE4-6AC3-E693-9BC9-93FFD64C3C02">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>ID_CONTENIDO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="TITULO" id="6F6592A3-50E8-7E31-EDD8-F6B234FD0A3C">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>TITULO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_CONTENIDO" id="1893E547-AC9D-6397-79E1-0E73EA46084F">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>TIPO_CONTENIDO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_TIPO_CONTENIDO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;DOCUMENTAL&apos;" description=""/>
+<valueDef value="&apos;MUSICA&apos;" description=""/>
+<valueDef value="&apos;PELICULA&apos;" description=""/>
+<valueDef value="&apos;PODCAST&apos;" description=""/>
+<valueDef value="&apos;SERIE&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANIO_LANZAMIENTO" id="6B352F09-0248-AA71-595C-E70DAAFEE25F">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>ANIO_LANZAMIENTO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION_MIN" id="7466606D-D3B7-033E-707B-5874FF2CFC79">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>DURACION_MIN</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SINOPSIS" id="E5EACB05-F17C-9C1E-3DD2-77C61CAAB6F3">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>SINOPSIS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASIFICACION_EDAD" id="65028720-1991-D861-EADF-9B7C08020365">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>CLASIFICACION_EDAD</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_CLASIFICACION</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;+13&apos;" description=""/>
+<valueDef value="&apos;+16&apos;" description=""/>
+<valueDef value="&apos;+18&apos;" description=""/>
+<valueDef value="&apos;+7&apos;" description=""/>
+<valueDef value="&apos;TP&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_ORIGINAL" id="9D5462BB-F9E7-1DEC-3CE9-C5954D11A2F5">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>ES_ORIGINAL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_ORIGINAL</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CATEGORIA" id="358F6CD0-24ED-5671-0256-E4EA66870BC8">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO</sourceObjSchema>
+<sourceObjName>ID_CATEGORIA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F976D0C-5BB7-80E8-FAE3-3BD30D61B4FA" referredColumn="00033907-FBBB-C280-5AB1-B1C394FAF0D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51DEF3B9-2F1F-F60E-FE27-20B2269374D2" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CONTENIDO_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010937</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41E72AE4-6AC3-E693-9BC9-93FFD64C3C02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B058758-090D-5ECD-98B7-8F3916C19AE7" name="FK_CONTENIDO_CATEGORIA">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="358F6CD0-24ED-5671-0256-E4EA66870BC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

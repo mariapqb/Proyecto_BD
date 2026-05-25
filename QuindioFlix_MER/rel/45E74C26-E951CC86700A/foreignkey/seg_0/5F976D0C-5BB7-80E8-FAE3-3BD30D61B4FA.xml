@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5F976D0C-5BB7-80E8-FAE3-3BD30D61B4FA" containerWithKeyObject="B10C80C9-FE84-8CAF-6FB8-6F332A5B4E75" localFKIndex="6B058758-090D-5ECD-98B7-8F3916C19AE7" name="FK_CONTENIDO_CATEGORIA">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>FK_CONTENIDO_CATEGORIA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<referredTableLongName>QUINDIOFLIX.CATEGORIAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AEA62A73-B6D5-1B54-BDF6-B49BEBF6A4B6</referredTableID>
+<keyObject>6BE5DC36-1B00-8B72-E60F-59B74D4261EE</keyObject>
+<referredKeyID>6BE5DC36-1B00-8B72-E60F-59B74D4261EE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CATEGORIA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

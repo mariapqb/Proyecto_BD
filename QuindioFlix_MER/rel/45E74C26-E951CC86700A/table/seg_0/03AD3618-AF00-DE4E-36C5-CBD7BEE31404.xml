@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03AD3618-AF00-DE4E-36C5-CBD7BEE31404" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="EPISODIOS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>EPISODIOS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Episodios de temporadas]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EPISODIO" id="325D194B-7041-7DAE-A06D-15DCD4382DEB">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>EPISODIOS</sourceObjSchema>
+<sourceObjName>ID_EPISODIO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del episodio]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_TEMPORADA" id="EDF5E8CC-D0BB-7B8D-D039-14BB9A341CC6">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>EPISODIOS</sourceObjSchema>
+<sourceObjName>ID_TEMPORADA</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temporada a la que pertenece]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5B7E7E-AACB-C156-4BA1-FBA45F274E46" referredColumn="8F9D3ABE-33BC-B2B5-2E40-C584267FB1AB"/>
+</associations>
+</Column>
+<Column name="NUMERO_EPISODIO" id="2B7962F3-2D40-0095-4AC3-43677F49BCDD">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>EPISODIOS</sourceObjSchema>
+<sourceObjName>NUMERO_EPISODIO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número del episodio]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITULO" id="AA8FE128-B951-C500-B575-E8AADBD8F75F">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>EPISODIOS</sourceObjSchema>
+<sourceObjName>TITULO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Título del episodio]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION_MIN" id="E6E6727C-498D-D4EE-6035-BB53ADE59B8F">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>EPISODIOS</sourceObjSchema>
+<sourceObjName>DURACION_MIN</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Duración en minutos]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A0B61D8-0D9C-AED2-0DEE-92E28ED08BF5" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="EPISODIOS_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010962</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="325D194B-7041-7DAE-A06D-15DCD4382DEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB683CCA-4EE4-F6E4-C7AB-70A1ADD0D203" name="UQ_EPISODIO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_EPISODIO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDF5E8CC-D0BB-7B8D-D039-14BB9A341CC6"/>
+<colUsage columnID="2B7962F3-2D40-0095-4AC3-43677F49BCDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="863A730C-0337-C2FA-AA91-BE7A88C5B1AB" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="UQ_EPISODIO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_EPISODIO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDF5E8CC-D0BB-7B8D-D039-14BB9A341CC6"/>
+<colUsage columnID="2B7962F3-2D40-0095-4AC3-43677F49BCDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96C64ED7-2BD6-2037-C4B8-E76649469A02" name="FK_EPI_TEMP">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDF5E8CC-D0BB-7B8D-D039-14BB9A341CC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

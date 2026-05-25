@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB11122B-AFFA-93B9-BB67-60AB4D902B4B" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="CONTENIDO_RELACIONADO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>CONTENIDO_RELACIONADO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relación entre contenidos (secuelas, spin-off, etc.)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONTENIDO_BASE" id="455B0751-00B2-8688-D725-80AC87C55867">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO_RELACIONADO</sourceObjSchema>
+<sourceObjName>ID_CONTENIDO_BASE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contenido principal]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BE06CD3-D4CF-0516-2889-07DCFC4EB6F2" referredColumn="41E72AE4-6AC3-E693-9BC9-93FFD64C3C02"/>
+</associations>
+</Column>
+<Column name="ID_CONTENIDO_REL" id="3FFB3FD6-0EBB-E020-FD3A-5F5E6E35C10D">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO_RELACIONADO</sourceObjSchema>
+<sourceObjName>ID_CONTENIDO_REL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contenido relacionado]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F6AEBD3-00E0-BE86-37E4-B5EF6A0C19B4" referredColumn="41E72AE4-6AC3-E693-9BC9-93FFD64C3C02"/>
+</associations>
+</Column>
+<Column name="TIPO_RELACION" id="137EFCFA-CEAF-63E7-5194-0EEDC06A3CC9">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>CONTENIDO_RELACIONADO</sourceObjSchema>
+<sourceObjName>TIPO_RELACION</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de relación entre contenidos]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_TIPO_RELACION</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;PRECUELA&apos;" description=""/>
+<valueDef value="&apos;REMAKE&apos;" description=""/>
+<valueDef value="&apos;SECUELA&apos;" description=""/>
+<valueDef value="&apos;SPINOFF&apos;" description=""/>
+<valueDef value="&apos;VERSION_EXTENDIDA&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF962008-7827-8B05-71B0-268C57982848" name="PK_CONT_REL">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PK_CONT_REL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="455B0751-00B2-8688-D725-80AC87C55867"/>
+<colUsage columnID="3FFB3FD6-0EBB-E020-FD3A-5F5E6E35C10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A01AF5EB-1965-CDED-F26E-A6A513A74DBE" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PK_CONT_REL">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PK_CONT_REL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="455B0751-00B2-8688-D725-80AC87C55867"/>
+<colUsage columnID="3FFB3FD6-0EBB-E020-FD3A-5F5E6E35C10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="589DBBFA-9018-36DE-CCAE-9EEEFAACD68C" name="FK_CR_BASE">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="455B0751-00B2-8688-D725-80AC87C55867"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AAF996F-68FC-4A24-1B2C-43145FC6F8B4" name="FK_CR_REL">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FFB3FD6-0EBB-E020-FD3A-5F5E6E35C10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

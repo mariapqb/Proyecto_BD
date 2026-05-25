@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22E7A5B5-0334-DFFF-8ED5-F79EEE21814C" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PERFILES">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PERFILES</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Perfiles de usuario]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERFIL" id="C041D94E-D743-F372-4284-DB1B1A8689F1">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PERFILES</sourceObjSchema>
+<sourceObjName>ID_PERFIL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID del perfil]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="ID_USUARIO" id="42D3C653-0295-2EF7-7CD7-3D4FBDB6FE49">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PERFILES</sourceObjSchema>
+<sourceObjName>ID_USUARIO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuario dueño del perfil]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EA56297-A9BA-0938-1909-DBF7F4E02033" referredColumn="E89C4DE3-3D5E-6A2E-98A1-B6DBBF8D8652"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="776B7961-7F2E-21DC-4FAD-13F3515E2CDC">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PERFILES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del perfil]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVATAR" id="40A8EEDD-55D5-BD93-D3C3-E6B432806EA5">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PERFILES</sourceObjSchema>
+<sourceObjName>AVATAR</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Imagen del perfil]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="1801FBB6-E365-9A92-E9ED-C78C8BEE88DB">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>PERFILES</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de perfil (ADULTO/INFANTIL)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<constraintName>CHK_TIPO_PERFIL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;ADULTO&apos;" description=""/>
+<valueDef value="&apos;INFANTIL&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="926F5109-56C7-514A-339D-BE4BC7EF111D" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PERFILES_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010926</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C041D94E-D743-F372-4284-DB1B1A8689F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6698E7A5-6B7B-BD5A-ABA2-531262F06657" name="UQ_PERFIL">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_PERFIL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42D3C653-0295-2EF7-7CD7-3D4FBDB6FE49"/>
+<colUsage columnID="776B7961-7F2E-21DC-4FAD-13F3515E2CDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98DCD50A-CCEF-2F63-5EB8-0BCCE4AF3D71" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="UQ_PERFIL">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_PERFIL</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42D3C653-0295-2EF7-7CD7-3D4FBDB6FE49"/>
+<colUsage columnID="776B7961-7F2E-21DC-4FAD-13F3515E2CDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70EC26AA-1C4E-8D86-C476-BF33D9028C1F" name="FK_PERFILES_USUARIOS">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42D3C653-0295-2EF7-7CD7-3D4FBDB6FE49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

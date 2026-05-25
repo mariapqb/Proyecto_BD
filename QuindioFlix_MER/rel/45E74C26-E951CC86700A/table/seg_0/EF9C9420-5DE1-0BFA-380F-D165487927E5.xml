@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF9C9420-5DE1-0BFA-380F-D165487927E5" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="DEPARTAMENTOS_GEO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>DEPARTAMENTOS_GEO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cátalogo de Departamentos geográficos (división territorial)]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DEPARTAMENTO_GEO" id="75AD04C7-3489-2D2C-8460-F8EEC6C071C2">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS_GEO</sourceObjSchema>
+<sourceObjName>ID_DEPARTAMENTO_GEO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador del departamento geográfico]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NOMBRE" id="FF8F0FCD-112C-1E36-1C32-E1B55F00C70E">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS_GEO</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del departamento geográfico]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PAIS" id="CC995080-84F1-3E56-7840-8D0FD9AD3E98">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>DEPARTAMENTOS_GEO</sourceObjSchema>
+<sourceObjName>ID_PAIS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[País al que pertenece]]></commentInRDBMS>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5DA46E0-09BF-064D-F3FE-A37B98F88897" referredColumn="E9FF7B15-CB8E-1855-3E00-154E1BF78E06"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C21CE9DA-EEB0-EB06-F2B8-2B8F8374BC30" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="DEPARTAMENTOS_GEO_PK">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>SYS_C0010869</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75AD04C7-3489-2D2C-8460-F8EEC6C071C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="392922B3-1B06-CE6F-522A-ABFE9A34A535" name="UQ_DEPGEO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_DEPGEO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:45 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF8F0FCD-112C-1E36-1C32-E1B55F00C70E"/>
+<colUsage columnID="CC995080-84F1-3E56-7840-8D0FD9AD3E98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1969BDF9-21F3-F8BB-AE02-C83CC39CA050" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="UQ_DEPGEO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_DEPGEO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:43 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF8F0FCD-112C-1E36-1C32-E1B55F00C70E"/>
+<colUsage columnID="CC995080-84F1-3E56-7840-8D0FD9AD3E98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86CE26A2-0B58-6787-FEFA-3441BD59953E" name="FK_DEPGEO_PAIS">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC995080-84F1-3E56-7840-8D0FD9AD3E98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

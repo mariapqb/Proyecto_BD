@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="58A69E64-98EB-1505-FD8A-737AA39EFD52" containerWithKeyObject="61A01F95-1C6B-E813-5176-1F043C7B5240" localFKIndex="EBA148FD-A5EE-79E0-4ACE-B74AB77F5507" name="FK_PAGO_METODO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>FK_PAGO_METODO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:53:20 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>C4EB5045-3327-8C6F-2A76-14A9E80935D4</importedID>
+<referredTableLongName>QUINDIOFLIX.METODOS_PAGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ACB23BAD-7813-1405-A4A8-84127DE8B6C7</referredTableID>
+<keyObject>D4DF2A4B-A5B0-256F-F8AB-3CF1D767E082</keyObject>
+<referredKeyID>D4DF2A4B-A5B0-256F-F8AB-3CF1D767E082</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_METODO_PAGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

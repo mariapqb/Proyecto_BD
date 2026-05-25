@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D5DA46E0-09BF-064D-F3FE-A37B98F88897" containerWithKeyObject="EF9C9420-5DE1-0BFA-380F-D165487927E5" localFKIndex="86CE26A2-0B58-6787-FEFA-3441BD59953E" name="FK_DEPGEO_PAIS">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>FK_DEPGEO_PAIS</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<referredTableLongName>QUINDIOFLIX.PAISES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE862796-0F2E-D3EE-A700-D4BBCB59DAE1</referredTableID>
+<keyObject>1E7119DA-510A-0047-4A92-49E3646D1629</keyObject>
+<referredKeyID>1E7119DA-510A-0047-4A92-49E3646D1629</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PAIS</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

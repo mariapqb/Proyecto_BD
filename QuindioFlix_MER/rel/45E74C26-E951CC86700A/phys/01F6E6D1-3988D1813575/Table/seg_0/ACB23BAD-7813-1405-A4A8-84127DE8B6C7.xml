@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="METODOS_PAGO" directorySegmentName="seg_0" id="ACB23BAD-7813-1405-A4A8-84127DE8B6C7">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>BA7E1FDC-F4AE-3FC6-4012-4145ABA8369A</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE_METODO" id="B7617609-3FB5-4F3C-B1A3-96DA915520DD">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_METODO_PAGO" id="E4E86B78-310A-3348-1A3C-68A3E0C3B107">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="FB4B862B-E443-E411-19B8-39A4A695C976">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_METODOS_PAGO" id="0A30A02E-89C0-F4F2-73C8-B0DE867B6A2A">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UQ_METODO_NOMBRE" id="98DAD8DE-1752-A995-DA9F-1D67C976A763">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<schemaObject>C45D1CA2-316F-ED99-35BC-F68158FCFFFD</schemaObject>
+<segment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_METODOS_PAGO" id="D4DF2A4B-A5B0-256F-F8AB-3CF1D767E082">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<segment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<existingIndex>0A30A02E-89C0-F4F2-73C8-B0DE867B6A2A</existingIndex>
+<indexSegment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_METODO_NOMBRE" id="C05080E0-B109-1C34-BFAD-CD67DFF29FAF">
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<segment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</segment>
+<tableSpace>F0A97970-973F-118A-4FB6-54A347FAFC0C</tableSpace>
+<existingIndex>98DAD8DE-1752-A995-DA9F-1D67C976A763</existingIndex>
+<indexSegment>81013DDC-A1E1-EA09-AD42-F4C58F8A61DF</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

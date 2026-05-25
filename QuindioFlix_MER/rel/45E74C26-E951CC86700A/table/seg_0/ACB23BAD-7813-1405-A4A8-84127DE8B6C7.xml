@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACB23BAD-7813-1405-A4A8-84127DE8B6C7" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="METODOS_PAGO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>METODOS_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>1C91F891-B772-B1BF-72C2-EEBF7A09E6C8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_METODO_PAGO" id="E4E86B78-310A-3348-1A3C-68A3E0C3B107">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>METODOS_PAGO</sourceObjSchema>
+<sourceObjName>ID_METODO_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>DB47806E-C036-F83A-218E-4292010D2199</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="NOMBRE_METODO" id="B7617609-3FB5-4F3C-B1A3-96DA915520DD">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>METODOS_PAGO</sourceObjSchema>
+<sourceObjName>NOMBRE_METODO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>97306633-5473-FC4F-A1A6-CF0C9D5CB127</importedID>
+<constraintName>CHK_NOMBRE_METODO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;DAVIPLATA&apos;" description=""/>
+<valueDef value="&apos;NEQUI&apos;" description=""/>
+<valueDef value="&apos;PAYPAL&apos;" description=""/>
+<valueDef value="&apos;PSE&apos;" description=""/>
+<valueDef value="&apos;TARJETA&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="FB4B862B-E443-E411-19B8-39A4A695C976">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>METODOS_PAGO</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>C5B16D79-AB55-D607-06C4-96151689A293</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4DF2A4B-A5B0-256F-F8AB-3CF1D767E082" name="PK_METODOS_PAGO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PK_METODOS_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>639EE0E0-B68A-1402-4E92-6918F038974E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4E86B78-310A-3348-1A3C-68A3E0C3B107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C05080E0-B109-1C34-BFAD-CD67DFF29FAF" name="UQ_METODO_NOMBRE">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_METODO_NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>25B49FE9-DD27-A236-F7D0-727E82B7563C</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7617609-3FB5-4F3C-B1A3-96DA915520DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A30A02E-89C0-F4F2-73C8-B0DE867B6A2A" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="PK_METODOS_PAGO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>PK_METODOS_PAGO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>04FE7BB7-9FBB-099E-5B87-73044BD28F0E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4E86B78-310A-3348-1A3C-68A3E0C3B107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98DAD8DE-1752-A995-DA9F-1D67C976A763" schemaObject="C45D1CA2-316F-ED99-35BC-F68158FCFFFD" name="UQ_METODO_NOMBRE">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>UQ_METODO_NOMBRE</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-25 21:57:19 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<importedID>2E3DA119-FD84-BDAE-7B85-F7D617E4F1D8</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7617609-3FB5-4F3C-B1A3-96DA915520DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

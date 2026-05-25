@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="30022182-5B1A-0534-C686-E2A955FF8086" containerWithKeyObject="8DF2E613-E5D8-2F88-1392-CD5F04223A2A" localFKIndex="4CB12889-6BA5-9FCD-AC80-84DA3A51AFCB" name="FK_REP_EPISODIO">
+<sourceConnName>QuindioFlix</sourceConnName>
+<sourceObjSchema>QUINDIOFLIX</sourceObjSchema>
+<sourceObjName>FK_REP_EPISODIO</sourceObjName>
+<createdBy>maria</createdBy>
+<createdTime>2026-04-24 01:15:48 UTC</createdTime>
+<ownerDesignName>QuindioFlix_MER</ownerDesignName>
+<referredTableLongName>QUINDIOFLIX.EPISODIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>03AD3618-AF00-DE4E-36C5-CBD7BEE31404</referredTableID>
+<keyObject>7A0B61D8-0D9C-AED2-0DEE-92E28ED08BF5</keyObject>
+<referredKeyID>7A0B61D8-0D9C-AED2-0DEE-92E28ED08BF5</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_EPISODIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
